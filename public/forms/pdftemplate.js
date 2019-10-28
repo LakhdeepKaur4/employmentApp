@@ -82,7 +82,7 @@ module.exports = item => {
   <i>PRE-EMPLOYMENT QUESTIONNAIRE</i><br>
   <i style = "margin-left:8px">EQUAL OPPORTUNITY EMPLOYER</i>
   </span>
-  <span><img src = "images/image.png"></span>
+  <span><img src = "https://employmentapp.herokuapp.com/images/image.jpg"></span>
   </span>
   <div class = "row" style = "margin-top:10px">
   <div class = "col-xs-3">
