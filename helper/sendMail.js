@@ -64,7 +64,7 @@ mailToEmployer = (email, base64, name, fileName) => {
                 },
                 {
                     "Email": config.MJ_MAIL_ID,
-                    "Name": "Lakhdeep Kaur"
+                    "Name": "Greatwits"
                 }],
                 "Subject": "Application request",
                 "HTMLPart": `<p>Hi,<p><p>${name} has submitted the application.Kindly review the application<p>`,
