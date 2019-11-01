@@ -19,14 +19,15 @@ module.exports = item => {
   <style>
   .heading{
   font-weight:bold;
-  font-size:17px;
+  font-size:15px;
   margin-left:12px;
-  margin-top:10px;
+  margin-top:18px;
   }
   .pre-emp{
   font-weight:bold;
   font-size:12px;
   margin-left:8px;
+  margin-top:18px;
   }
   input{
   width: -webkit-fill-available;
@@ -37,8 +38,8 @@ module.exports = item => {
   .imgLogo{
     height:50px;
     width:50px;
-    margin-top:-20px;
-    margin-left: 13px
+    margin-top:-45px;
+    margin-left:45%;
   }
   .border1{
   border: none;
@@ -79,16 +80,22 @@ module.exports = item => {
   <div class = "container">
   <span >
   <span class = "row">
-  <h6 class = "heading col-xs-7">
+
+  <span class = "heading col-xs-5">
   <i>Application for Employment</i>
-  </h6>
+  </span>
   
-  <span class = "pre-emp col-xs-5">
+  <span class = "pre-emp col-xs-4" style = "margin-left:20px">
+  <div class = "row" >
   <i>PRE-EMPLOYMENT QUESTIONNAIRE</i><br>
-  <i style = "margin-left:8px;margin-top:-20px;">EQUAL OPPORTUNITY EMPLOYER</i>
+  </div>
+  <div class = "row">
+  <i>EQUAL OPPORTUNITY EMPLOYER</i>
+  </div>
+  </div>
   </span>
-  <span><img src = "https://employmentapp.herokuapp.com/images/image.jpg"></span>
-  </span>
+  <span class = "col-xs-3"><img class = "imgLogo" src = "https://employmentapp.herokuapp.com/images/image.jpg"></span>
+  
   <div class = "row" style = "margin-top:10px">
   <div class = "col-xs-3">
   <i><h3 class = "table_Head">Personal Information</h3></i> 
