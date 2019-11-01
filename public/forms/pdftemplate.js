@@ -39,7 +39,7 @@ module.exports = item => {
     height:50px;
     width:50px;
     margin-top:-45px;
-    margin-left:45%;
+    margin-left:50%;
   }
   .border1{
   border: none;
