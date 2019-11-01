@@ -66,9 +66,7 @@ module.exports = item => {
   .tableText{
   font-size:8px;
   }
-  .approved_border{
   
-  }
   th,td{
   font-size:10px
   }
@@ -449,14 +447,14 @@ module.exports = item => {
   <h5>APPROVED:</h5>
   </table>
   <div>
-  <span class = "approved_border">${item.approved.employmentManager}</span>
-  <span class = "approved_border">${item.approved.departmenttHead}</span>
-  <span class = "approved_border">${item.approved.generalManager}</span>
+  <span>${item.approved.employmentManager}</span>
+  <span>${item.approved.departmenttHead}</span>
+  <span>${item.approved.generalManager}</span>
   </div>
   <div>
-  <span>________________</span>
-  <span>________________</span>
-  <span>________________</span>
+  <span>______________________</span>
+  <span>______________________</span>
+  <span>______________________</span>
   </div>
   <div>
   <span class = "approved_font">
@@ -472,6 +470,7 @@ module.exports = item => {
   GENERAL MANAGER 
   </span>
   </div>
+  <small style="font-size: x-small;">
   <p style="width:60% ;text-align:justify"> 
   
   This application for employment is sold only for general use throughout the United States. 
@@ -480,6 +479,7 @@ module.exports = item => {
   and/or 'ederal law may be based. It is the user's responsibility to ensure that this form's
   use complies with applicable laws, which change from time to time.
   </p>
+  </small>
   </table>
   
   
