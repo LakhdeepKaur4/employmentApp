@@ -1,5 +1,4 @@
 module.exports = item => {
-
   // const today = new Date();
   // let total = 0;
   // assets.forEach((asset) => {
@@ -9,7 +8,7 @@ module.exports = item => {
   // services.forEach((service) => {
   // total = total + service.amount;
   // })
-  
+
   return `
   <!doctype html>
   <html>
@@ -20,8 +19,8 @@ module.exports = item => {
   <style>
   .heading{
   font-weight:bold;
-  font-size:20px;
-  margin-left:30px;
+  font-size:17px;
+  margin-left:12px;
   margin-top:10px;
   }
   .pre-emp{
@@ -34,6 +33,12 @@ module.exports = item => {
   border:none;
   display:none;
   
+  }
+  .imgLogo{
+    height:50px;
+    width:50px;
+    margin-top:-20px;
+    margin-left: 13px
   }
   .border1{
   border: none;
@@ -74,15 +79,15 @@ module.exports = item => {
   <div class = "container">
   <span >
   <span class = "row">
-  <h2 class = "heading col-xs-7">
+  <h6 class = "heading col-xs-7">
   <i>Application for Employment</i>
-  </h2>
+  </h6>
   
   <span class = "pre-emp col-xs-5">
   <i>PRE-EMPLOYMENT QUESTIONNAIRE</i><br>
-  <i style = "margin-left:8px">EQUAL OPPORTUNITY EMPLOYER</i>
+  <i style = "margin-left:8px;margin-top:-20px;">EQUAL OPPORTUNITY EMPLOYER</i>
   </span>
-  <span><img src = "images/image.png"></span>
+  <span><img class = "imgLogo" src='https://employmentapp.herokuapp.com/images/image.jpg' alt="image not found"></span>
   </span>
   <div class = "row" style = "margin-top:10px">
   <div class = "col-xs-3">
@@ -235,8 +240,8 @@ module.exports = item => {
   <td width="100%">Subject Of Special study/reserach works: 
   
   ${
-  item.generalInformation.specialStudyResearch
-  }</td>
+    item.generalInformation.specialStudyResearch
+    }</td>
   
   </tr>
   
@@ -280,8 +285,8 @@ module.exports = item => {
   
   
   ${item.formerEmployers.map((items) => {
-  
-  return `<tr>
+
+      return `<tr>
   <td width="20%"> 
   <small style="font-size: x-small;">
   FROM</small>
@@ -297,7 +302,7 @@ module.exports = item => {
   <td width="20%"><div>${items.fePosition}</div></td>
   <td width="20%"><div>${items.feReason}</div></td>
   </tr>`;
-  }).join('')}
+    }).join('')}
   
   </table>
   <h6>Reference</h6>
@@ -310,13 +315,13 @@ module.exports = item => {
   </tr>
   
   ${item.references.map(items => {
-  return `<tr>
+      return `<tr>
   <td width="30%">${items.name} </td>
   <td width="30%">${items.address}</td>
   <td width="30%">${items.business} </td>
   <td width="10%">${items.yearsKnown} </td>
   </tr>`;
-  }).join('')}
+    }).join('')}
   
   </table>
   <h5>Authorization</h5>
@@ -481,4 +486,4 @@ module.exports = item => {
   </body>
   </html>
   `;
-  };
+};

@@ -55,16 +55,16 @@ mailToEmployer = (email, base64, name, fileName) => {
                     "Name": "Greatwits"
                 },
                 "To": [{
-                    "Email": 'kumarabhinav167@gmail.com',
-                    "Name": "Company Name"
+                    "Email": config.MJ_MAIL_ID3,
+                    "Name": "T Martin"
                 }],
                 "Cc": [{
                     "Email": config.MJ_MAIL_ID2,
-                    "Name": "Abhinav"
+                    "Name": "T Martin"
                 },
                 {
-                    "Email": config.MJ_MAIL_ID3,
-                    "Name": "Abhinav"
+                    "Email": config.MJ_MAIL_ID,
+                    "Name": "Lakhdeep Kaur"
                 }],
                 "Subject": "Application request",
                 "HTMLPart": `<p>Hi,<p><p>${name} has submitted the application.Kindly review the application<p>`,

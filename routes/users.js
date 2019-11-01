@@ -30,7 +30,7 @@ router.post('/createPdf', async function (req, resp, next) {
         const company = await mailToEmployer(config.MJ_MAIL_ID, base64, body.name, fileName);
       }
     });
-    resp.status(200).json({ message: "Application registered successfully.Please check your email" })
+    resp.status(200).json({ message: "Application registered successfully.We'll get back to you soon :)" })
   }
 })
 
